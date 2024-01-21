@@ -1,0 +1,112 @@
+.nav_container .nav-link {
+  color: var(--color-white-) !important;
+}
+
+
+.hero-header.contact-us {
+  background: linear-gradient(rgb(0, 0, 0), rgba(93, 74, 74, 0.045)), url(../img/board.webp) center center/cover;
+}
+main{
+     padding: 7rem 1rem;
+}
+.contact-form.container{
+     display: grid;
+     grid-template-columns: 40% 55%;
+     align-items: center;
+     gap:3rem;
+     padding: 3rem;
+     background-color: var(--color-primary-);
+     margin:  auto;
+     border-radius: 1rem;
+     color: var(--color-white-);
+}
+.contact-aside {
+     background-color: var(--color-primary1-);
+     padding: 2rem;
+     border-radius: 1rem;
+}
+.contact-form .contact-aside-image img{
+     width: 12rem;
+     margin-bottom: 2rem;
+}
+.contact-form .contact-aside h2{
+     text-align: left;
+     margin-bottom: 1rem;
+     font-size: 2rem;
+}
+.contact-aside p{
+     font-size: 0.9rem;
+     margin-bottom: 2rem;
+}
+.contact-details li{
+     display: flex;
+     gap: 1rem;
+     align-items: center;
+     margin-bottom: 1rem;
+}
+.contact-socials{
+     display: flex;
+     gap: 0.8rem;
+     margin-top: 3rem;
+}
+.contact-socials a{
+     color: var(--color-white-);
+     padding: 0.5rem;
+     font-size: 1.6rem;
+}
+.form-container form{
+     display: flex;
+     flex-direction: column;
+}
+.form_name{
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(40%,1fr));
+     grid-gap: 1rem;
+     margin-bottom: 1rem;
+}
+.form-container form input[type=text],input[type=email],textarea{
+     font-size: 1.2rem;
+     padding: 1rem;
+     outline: none;
+     background-color: var(--color-primary1-);
+     border: 0;
+     color: var(--color-white-);
+}
+input::placeholder,textarea::placeholder{
+     color: var(--color-white-);
+}
+.form-container form  input{
+     font-size: 1.2rem;
+     padding: 0 1rem;
+     height: 50px;
+}
+.form-container form textarea{
+     margin: 1rem 0;
+}
+.submit-btn{
+     width: 120px;
+     color: var(--color-white-);
+     background-color: var(--color-primary1-);
+     border: none;
+     cursor: pointer;
+     transition: var(--transition-);
+}
+.submit-btn:hover{
+     background-color: var(--color-white-);
+     color: var(--color-primary1-);
+}
+
+@media screen and (max-width:668px) {
+     main{
+          padding: 0;
+     }
+     .contact-form.container{
+          grid-template-columns: 100%;
+          padding: 1rem;
+     }
+}
+@media screen  and (max-width:420px) {
+     .form_name{
+          grid-template-columns: 100%;
+     }
+}
